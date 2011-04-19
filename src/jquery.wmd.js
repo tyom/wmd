@@ -4,6 +4,14 @@
 
 (function($) {
     var counter = 0;
+
+    // Include CSS file
+    $('<link>').appendTo('head')
+              .attr({
+                  rel:  'stylesheet',
+                  type: 'text/css',
+                  href: './css/wmd.css'
+                });
     
     $.fn.wmd = function(_options) {
         this.each(function() {
@@ -1295,7 +1303,6 @@ var UndoManager = function(textarea, pastePollInterval, callback){ // {{{
 WMDEditor.util = util;
 WMDEditor.position = position;
 WMDEditor.TextareaState = TextareaState;
-WMDEditor.Checks = Checks;
 WMDEditor.InputPoller = InputPoller;
 WMDEditor.PreviewManager = PreviewManager;
 WMDEditor.UndoManager = UndoManager;
