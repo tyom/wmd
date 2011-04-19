@@ -5,16 +5,26 @@
         <title>Test WMD Page</title>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
         <script type="text/javascript" src="./src/jquery.wmd.js"></script>
+        <style type="text/css" media="screen">
+            body {
+                padding: 20px;
+                font: 12px/1.3 'Lucida Grande', Arial, sans-serif;
+            }
+            form {
+                width: 500px;
+                margin: 0 0 20px;
+            }
+        </style>
     </head>
     
     <body>
-        <div style="width: 500px;">
-            <textarea id="xwmd-input" rows="5" style="width: 100%"></textarea>
-        </div>
+        <form class="wmd">
+            <textarea class="wmd-enabled" rows="5"></textarea>
+        </form>
         
-        <div style="width: 500px;">
-            <textarea id="ywmd-input" rows="5" style="width: 100%"></textarea>
-        </div>
+        <form class="wmd">
+            <textarea class="wmd-enabled" rows="5"></textarea>
+        </form>
             
         <script type="text/javascript">
         $().ready(function() {

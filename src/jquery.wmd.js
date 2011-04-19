@@ -1012,6 +1012,11 @@ var PreviewManager = function(wmd){ // {{{
         
         if (wmd.panels.preview) {
             wmd.panels.preview.innerHTML = text;
+            if(wmd.panels.preview.innerHTML) {
+                $(wmd.panels.preview).addClass('active');
+            } else {
+                $(wmd.panels.preview).removeClass('active');
+            }
         }
         
         setPanelScrollTops();
